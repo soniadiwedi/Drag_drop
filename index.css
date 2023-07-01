@@ -1,0 +1,68 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body h1{
+    align-items: center;
+   text-align: center;
+   color: white;
+    background-color: rgb(201, 36, 165);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(201, 36, 165);
+    
+}
+.sortable-list{
+    background-color: white;
+    width: 60%;
+    padding: 30px 35px 20px;
+    border-radius: 7px;
+    box-shadow: 0 15 30px rgba(0,0,0,0.1);
+}
+.sortable-list .item{
+    list-style: none;
+    display: flex;
+    cursor: move;
+    background: #fff;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 13px;
+    margin-bottom: 11px;
+    border: 1px solid #ccc;
+    justify-content: space-between;
+}
+.item .details{
+    display: flex;
+    align-items: center;
+}
+.item .details img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    pointer-events: none;
+}
+.item .details span{
+    font-size: 1.13rem;
+}
+
+.item i{
+    color: #474747;
+    font-size: 1.13rem;
+
+}
+
+.item .dragging{
+    opacity: 0.6;
+}
+.item .dragging :where(.details,i){
+    opacity: 0;
+}

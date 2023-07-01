@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Drag and Drop </h1>
+  <div class="container"> 
+
+    <ul class="sortable-list">
+      <li class="item" draggable="true">
+        <div class="details">
+          <img src="https://png.pngtree.com/png-clipart/20190124/ourmid/pngtree-hand-painted-cartoon-beauty-avatar-png-image_550632.jpg">
+          <span>Megha</span>
+        </div>
+        <i class="uil uil-draggabledots"></i>
+      </li>
+      <li class="item">
+        <div class="details" draggable="true">
+          <img src="https://static.vecteezy.com/system/resources/previews/002/002/403/original/man-with-beard-avatar-character-isolated-icon-free-vector.jpg">
+          <span>Varsha</span>
+        </div>
+        <i class="uil uil-draggabledots"></i>
+      </li>
+      <li class="item" draggable="true">
+        <div class="details">
+          <img src="data:image/jpeg;base64,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">
+          <span>Ritu</span>
+        </div>
+        <i class="uil uil-draggabledots"></i>
+      </li>
+      <li class="item" draggable="true">
+        <div class="details">
+          <img src="https://img.freepik.com/free-vector/cheerful-cute-girl-character-hand-drawn-cartoon-art-illustration_56104-968.jpg?w=2000">
+        <span>Pooja</span>
+      </div>
+      <i class="uil uil-draggabledots"></i>
+    </li>
+    <li class="item" draggable="true">
+      <div class="details">
+        <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-cute-girl-avatar-material-png-image_4023832.jpg">
+        <span>Upasana</span>
+      </div>
+      <i class="uil uil-draggabledots"></i>
+    </li>
+  </ul>
+  
+</div>
+</body>
+
+</html>
